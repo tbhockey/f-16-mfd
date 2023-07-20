@@ -86,6 +86,7 @@ a.osb:active {
 .osb-label {
   margin: 3px 15.3px;
   padding: 0px 2px;
+  width: 30px;
 }
 
 .osb-label.active {
