@@ -1,0 +1,94 @@
+body {
+  color: #a4a5a9;
+  background-color: #020202;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+}
+
+.mfd-enclosure {
+  width: 500px;
+  height: 500px;
+  background-color: #2a2a2a;
+  border-radius: 20px;
+  border-top: 3px solid #555556;
+  border-bottom: 3px solid black;
+}
+
+.osb-row {
+  text-align: center;
+  display: flex;
+  margin-left: 98px;
+}
+
+.core {
+  display: flex;
+}
+
+.osb-column {
+  display: flex;
+  flex-direction: column;
+  margin: 39px 0;
+}
+
+a.osb {
+  flex: initial;
+  width: 22px;
+  height: 22px;
+  background-color: #919191;
+  margin: 13px;
+  border-radius: 1px;
+  display: block;
+  border: 2px solid #c3c3c5;
+  padding: 4px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.8);
+}
+
+a.osb:active {
+  background-color: #7e7e7e;
+  border-color: #a0a0a0;
+}
+
+.screen {
+  flex: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  border-radius: 40px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid #555556;
+}
+
+.screen-glare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(130deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.04) 100%);
+}
+
+.screen-row {
+  flex: initial;
+  display: flex;
+  margin: 0px 38px;
+}
+
+.screen-middle {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.osb-label {
+  margin: 3px 15.3px;
+  padding: 0px 2px;
+}
+
+.osb-label.active {
+  background-color: #a4a5a9;
+  color: #0a0a0a;
+}
