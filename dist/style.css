@@ -1,5 +1,5 @@
 body {
-  color: #a4a5a9;
+  color: #b2b3b9;
   background-color: #020202;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
@@ -27,20 +27,32 @@ body {
 .osb-column {
   display: flex;
   flex-direction: column;
-  margin: 39px 0;
+  margin: 36px 0;
+}
+
+.osb-row .osb-nook {
+  flex: initial;
+  box-shadow: inset -30px 0px 5px -29px rgba(0,0,0,0.7), inset 30px 0px 5px -29px rgba(0,0,0,0.7);
+  margin-right: 6px;
+}
+
+.osb-column .osb-nook {
+  flex: initial;
+  box-shadow: inset 0px -30px 5px -29px rgba(0,0,0,0.7), inset 0px 30px 5px -29px rgba(0,0,0,0.7);
+  margin-bottom: 6px;
+  border-bottom: 1px solid #555556;
 }
 
 a.osb {
-  flex: initial;
   width: 22px;
   height: 22px;
   background-color: #919191;
-  margin: 13px;
-  border-radius: 1px;
+  margin: 11px;
+  border-radius: 2px;
   display: block;
   border: 2px solid #c3c3c5;
   padding: 4px;
-  box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.8);
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.8), inset 0px 1px 3px 0px rgba(255,255,255,0.2), inset 0px -2px 3px 0px rgba(0,0,0,0.2);
 }
 
 a.osb:active {
@@ -49,12 +61,10 @@ a.osb:active {
 }
 
 .screen {
-  flex: auto;
-  display: flex;
   position: relative;
   flex-direction: column;
   overflow: hidden;
-  background-color: #0a0a0a;
+  background-color: #080810;
   border-radius: 40px;
   border-top: 3px solid black;
   border-bottom: 3px solid #555556;
@@ -73,17 +83,19 @@ a.osb:active {
   flex: initial;
   display: flex;
   margin: 0px 38px;
+  position: relative;
 }
 
 .screen-label-column {
   flex: initial;
   display: flex;
   flex-direction: column;
-  margin: 14px 0px;
+  margin: 12px 0px;
 }
 
 .screen-middle {
   display: flex;
+  position: relative;
 }
 
 #page-content {
@@ -114,6 +126,6 @@ a.osb:active {
 }
 
 .osb-label.active {
-  background-color: #a4a5a9;
-  color: #0a0a0a;
+  background-color: #b2b3b9;
+  color: #080810;
 }

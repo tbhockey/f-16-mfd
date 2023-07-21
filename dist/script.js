@@ -4,17 +4,22 @@ const data = [
   {
     "id": 2,
     "label": "SMPL",
-    "content": "This is a sample page"
+    "content": "THIS IS A SAMPLE PAGE"
   },
   {
     "id": 7,
     "label": "VRT",
-    "content": "You used a vertical OSB"
+    "content": "YOU USED A VERTICAL OSB"
+  },
+  {
+    "id": 8,
+    "label": "IMG",
+    "content": "<img src='http://home.scarlet.be/~jansensa/CAS%20Sniper%20Big%202.jpg'>"
   },
   {
     "id": 12,
     "label": "Home",
-    "content": "<hr><p>F-16 MFD V0.0.1</p><hr><p>By Tony Beninate</p><hr>",
+    "content": "<hr><p>F-16 MFD V0.0.1</p><hr><p>BY TONY BENINATE</p><hr>",
     "home": true
   }
 ];
@@ -39,7 +44,7 @@ function changeActivePage(id) {
     $('.osb-label').removeClass('active');
     osbLabel.addClass('active');
 
-    $('#page-content').html(definedData[0]['content'].toUpperCase());
+    $('#page-content').html(definedData[0]['content']);
   };
 
   activePageId = id;
