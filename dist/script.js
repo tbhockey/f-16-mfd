@@ -7,6 +7,11 @@ const data = [
     "content": "This is a sample page"
   },
   {
+    "id": 7,
+    "label": "VRT",
+    "content": "You used a vertical OSB"
+  },
+  {
     "id": 12,
     "label": "Home",
     "content": "<hr><p>F-16 MFD V0.0.1</p><hr><p>By Tony Beninate</p><hr>",

@@ -69,24 +69,48 @@ a.osb:active {
   background: linear-gradient(130deg, rgba(255,255,255,0) 20%, rgba(255,255,255,0.04) 100%);
 }
 
-.screen-row {
+.screen-label-row {
   flex: initial;
   display: flex;
   margin: 0px 38px;
 }
 
-.screen-middle {
-  flex: auto;
+.screen-label-column {
+  flex: initial;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 14px 0px;
 }
 
-.osb-label {
+.screen-middle {
+  display: flex;
+}
+
+#page-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: table;
+}
+
+.screen-pad {
+  flex: auto;
+}
+
+.screen-label-row .osb-label {
   margin: 3px 15.3px;
   padding: 0px 2px;
   width: 30px;
+}
+
+.screen-label-column .osb-label {
+  margin: 20px 3px;
+  padding: 0px 2px;
+  height: 20px;
 }
 
 .osb-label.active {
