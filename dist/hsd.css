@@ -1,0 +1,38 @@
+#hsd {
+  margin-top: 140px;
+  position: relative;
+}
+
+.hsd-grid-ring {
+  border: 1px solid #262746;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hsd-grid-ring-1 {
+  width: 120px;
+  height: 120px;
+}
+
+#hsd-grid-ring-2 {
+  width: 270px;
+  height: 270px;
+}
+
+#hsd-grid-ring-3 {
+  width: 420px;
+  height: 420px;
+}
+
+#hsd-cursor {
+  height: 16px;
+  width: 16px;
+  border-left: 1px solid #d8dbe0;
+  border-right: 1px solid #d8dbe0;
+  position: absolute;
+  top: -45px;
+  left: -5px;
+}
